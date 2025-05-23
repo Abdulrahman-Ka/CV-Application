@@ -58,60 +58,63 @@ const GeneralInfoForm = () => {
   return (
     <div className="general-info">
       <h2>General info</h2>
-      <form noValidate onSubmit={handleSubmit}>
+      {isEditing ? (
+        <form noValidate onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              placeholder="Your full name"
+              disabled={!isEditing}
+            />
+            {errors.name && <span className="error">{errors.name}</span>}
+          </div>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+              placeholder="you@example.com"
+              disabled={!isEditing}
+            />
+            {errors.email && <span className="error">{errors.email}</span>}
+          </div>
+          <div>
+            <label htmlFor="phone">Phone:</label>
+            <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+              placeholder="+123456789"
+              disabled={!isEditing}
+            />
+            {errors.phone && <span className="error">{errors.phone}</span>}
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      ) : (
         <div>
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            placeholder="Your full name"
-            disabled={!isEditing}
-          />
-          {errors.name && <span className="error">{errors.name}</span>}
+          <p>
+            <strong>Name:</strong> {formData.name}
+          </p>
+          <p>
+            <strong>Email:</strong> {formData.email}
+          </p>
+          <p>
+            <strong>Phone:</strong> {formData.phone}
+          </p>
+          <button onClick={handleEdit}>Edit</button>
         </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-            placeholder="you@example.com"
-            disabled={!isEditing}
-          />
-          {errors.email && <span className="error">{errors.email}</span>}
-        </div>
-        <div>
-          <label htmlFor="phone">Phone:</label>
-          <input
-            type="tel"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            required
-            placeholder="+123456789"
-            disabled={!isEditing}
-          />
-          {errors.phone && <span className="error">{errors.phone}</span>}
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-      <div>
-        <p>
-          <strong>Name:</strong> {formData.name}
-        </p>
-        <p>
-          <strong>Email:</strong> {formData.email}
-        </p>
-        <p>
-          <strong>Phone:</strong> {formData.phone}
-        </p>
-        <button onClick={handleEdit}>Edit</button>
-      </div>
+      )}
     </div>
   );
 };
