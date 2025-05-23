@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/CvContainer.css";
+import "../styles/cvContainer.css";
 import GeneralInfoForm from "./GeneralInfoForm";
 import EducationSection from "./EducationSection";
 import ExperienceSection from "./ExperienceSection";
