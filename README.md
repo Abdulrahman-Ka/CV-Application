@@ -16,10 +16,8 @@ Check out the live application here: [https://cv-application-e8z.pages.dev/](htt
 ## ⚙️ Technologies Used
 
 - **Frontend**: React, Vite
-- **Styling**: CSS Modules, Tailwind CSS (if applicable)
-- **State Management**: React Context API or Redux (if applicable)
+- **Styling**: CSS Modules
 - **PDF Generation**: jsPDF or similar library
-- **Routing**: React Router (if applicable)
 
 ## 📦 Installation
 
