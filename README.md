@@ -1,14 +1,32 @@
-# React + Vite
+# CV Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, minimalistic web application designed to streamline the creation and management of professional CVs. Built using React and Vite for a fast and responsive user experience.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live application here: [https://cv-application-e8z.pages.dev/](https://cv-application-e8z.pages.dev/)
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Dynamic CV Builder**: Effortlessly create and customize your CV with real-time previews.
+- **Template Selection**: Choose from a variety of professionally designed templates.
+- **Export Options**: Save your CV as a PDF or share it directly via a unique link.
+- **Responsive Design**: Optimized for both desktop and mobile devices.
 
-# CV-Application
+## ⚙️ Technologies Used
+
+- **Frontend**: React, Vite
+- **Styling**: CSS Modules, Tailwind CSS (if applicable)
+- **State Management**: React Context API or Redux (if applicable)
+- **PDF Generation**: jsPDF or similar library
+- **Routing**: React Router (if applicable)
+
+## 📦 Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Abdulrahman-Ka/CV-Application.git
+cd CV-Application
+npm install
+```
